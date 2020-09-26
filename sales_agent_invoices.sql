@@ -1,4 +1,4 @@
-Select e.FirstName + ' ' + e.LastName, i.invoiceid, c.customerId, i.Total
+Select distinct e.FirstName + ' ' + e.LastName[Sales Agent], i.invoiceid
 from customer c 
 	join employee e
 	on c.customerId = e.employeeId
